@@ -10,6 +10,7 @@ import {
   Video,
   Gift,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -17,6 +18,8 @@ const App = () => {
     minutes: 59,
     seconds: 59,
   });
+
+  const router = useRouter();
 
   // Simple countdown timer logic
   useEffect(() => {
@@ -61,7 +64,10 @@ const App = () => {
             Pricing
           </a>
         </div>
-        <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all active:scale-95">
+        <button
+          onClick={() => router.push("https://paystack.shop/pay/msspgmdpgo")}
+          className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all active:scale-95"
+        >
           Get Access
         </button>
       </nav>
@@ -182,7 +188,10 @@ const App = () => {
       </section>
 
       {/* --- Visual Showcase --- */}
-      <section className="bg-white text-black py-24 px-6 overflow-hidden">
+      <section
+        id="bundle"
+        className="bg-white text-black py-24 px-6 overflow-hidden"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
@@ -279,7 +288,10 @@ const App = () => {
                   Templates
                 </li> */}
               </ul>
-              <button className="w-full py-4 rounded-2xl bg-white text-black font-bold hover:bg-neutral-200 transition-colors">
+              <button
+                onClick={() => router.push("https://paystack.shop/pay/y-nskjk")}
+                className="w-full py-4 cursor-pointer rounded-2xl bg-white text-black font-bold hover:bg-neutral-200 transition-colors"
+              >
                 Select Basic
               </button>
             </div>
@@ -318,7 +330,12 @@ const App = () => {
                   Templates
                 </li> */}
               </ul>
-              <button className="w-full py-4 rounded-2xl bg-white text-black font-bold hover:bg-neutral-200 transition-colors">
+              <button
+                onClick={() =>
+                  router.push("https://paystack.shop/pay/24hlxs83ad")
+                }
+                className="w-full py-4 cursor-pointer rounded-2xl bg-yellow-600 text-white font-black hover:bg-yellow-500 transition-all hover:scale-[1.02]"
+              >
                 Select Basic
               </button>
             </div>
@@ -371,7 +388,12 @@ const App = () => {
                   Video Templates and Graphics
                 </li>
               </ul>
-              <button className="w-full py-4 rounded-2xl bg-purple-600 text-white font-black hover:bg-purple-500 transition-all hover:scale-[1.02]">
+              <button
+                onClick={() =>
+                  router.push("https://paystack.shop/pay/msspgmdpgo")
+                }
+                className="w-full cursor-pointer py-4 rounded-2xl bg-purple-600 text-white font-black hover:bg-purple-500 transition-all hover:scale-[1.02]"
+              >
                 GET ACCESS NOW
               </button>
             </div>
