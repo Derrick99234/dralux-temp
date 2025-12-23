@@ -1,16 +1,13 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Play,
   Download,
   Zap,
-  Clock,
   CheckCircle2,
-  Star,
   ShieldCheck,
   Layers,
   Video,
-  ChevronRight,
   Gift,
 } from "lucide-react";
 
@@ -50,7 +47,7 @@ const App = () => {
             Pr
           </div>
           <span className="text-xl font-bold tracking-tighter">
-            PREMIERE<span className="text-yellow-400 text-2xl">X</span>
+            DRALUX<span className="text-yellow-400 text-2xl">TEMP</span>
           </span>
         </div>
         <div className="hidden md:flex gap-8 text-sm font-medium text-neutral-400">
@@ -97,7 +94,7 @@ const App = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-black px-10 py-5 rounded-2xl text-xl transition-all hover:scale-105 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2">
-              <Download size={24} /> GET THE BUNDLE - $49
+              <Download size={24} /> GET THE BUNDLE - $10
             </button>
             <button className="w-full sm:w-auto bg-white/5 border border-white/10 hover:bg-white/10 px-10 py-5 rounded-2xl text-xl font-bold transition-all flex items-center justify-center gap-2">
               <Play size={24} fill="white" /> Watch Demo
@@ -213,7 +210,7 @@ const App = () => {
               <span className="font-bold text-neutral-500">Transitions</span>
             </div>
             <div className="h-64 bg-neutral-900 text-white rounded-3xl flex flex-col items-center justify-center hover:bg-purple-600 transition-all cursor-pointer">
-              <span className="text-5xl font-black">80+</span>
+              <span className="text-5xl font-black">100+</span>
               <span className="font-bold text-white/60 text-center">
                 Kinetic <br /> Typography
               </span>
@@ -240,7 +237,7 @@ const App = () => {
         {/* Background Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-purple-900/10 rounded-full blur-[150px] pointer-events-none" />
 
-        <div className="max-w-4xl mx-auto relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black mb-4">
               PICK YOUR PLAN
@@ -250,32 +247,76 @@ const App = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Basic */}
             <div className="bg-neutral-900 border border-white/10 p-10 rounded-[2.5rem] flex flex-col">
-              <h4 className="text-xl font-bold mb-2">The Starter</h4>
+              <h4 className="text-xl font-bold mb-2">STARTER</h4>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-black">$29</span>
+                <span className="text-4xl font-black">$4</span>
                 <span className="text-neutral-500 line-through font-bold">
-                  $99
+                  $10
                 </span>
               </div>
               <ul className="space-y-4 mb-10 grow">
                 <li className="flex items-center gap-3 text-neutral-300">
-                  <CheckCircle2 className="text-green-500" size={18} /> 50
+                  <CheckCircle2 className="text-green-500" size={18} /> 70+
                   Essential Transitions
                 </li>
                 <li className="flex items-center gap-3 text-neutral-300">
-                  <CheckCircle2 className="text-green-500" size={18} /> 20 Lower
-                  Thirds
+                  <CheckCircle2 className="text-green-500" size={18} /> 50+
+                  Lower Thirds
                 </li>
                 <li className="flex items-center gap-3 text-neutral-300">
                   <CheckCircle2 className="text-green-500" size={18} /> HD & 4K
                   Ready
                 </li>
-                <li className="flex items-center gap-3 text-neutral-500 line-through">
-                  <CheckCircle2 size={18} /> SFX Bonus Pack
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 100+
+                  PREIMERE PRO & AFTER EFFECTS Templates
                 </li>
+                {/* <li className="flex items-center gap-3 text-neutral-500 line-through">
+                  <CheckCircle2 size={18} /> 100+ PREIMERE PRO & AFTER EFFECTS
+                  Templates
+                </li> */}
+              </ul>
+              <button className="w-full py-4 rounded-2xl bg-white text-black font-bold hover:bg-neutral-200 transition-colors">
+                Select Basic
+              </button>
+            </div>
+            {/* Advanced */}
+            <div className="bg-linear-to-br from-yellow-900/40 to-black border-2 border-yellow-500 p-10 rounded-[2.5rem] flex flex-col relative scale-105 shadow-2xl shadow-yellow-500/20">
+              <h4 className="text-xl font-bold mb-2">ADVANCED</h4>
+              <div className="flex items-baseline gap-1 mb-6">
+                <span className="text-4xl font-black">$10</span>
+                <span className="text-neutral-500 line-through font-bold">
+                  $10
+                </span>
+              </div>
+              <ul className="space-y-4 mb-10 grow">
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 70+
+                  Essential Transitions
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 50+
+                  Lower Thirds
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> HD & 4K
+                  Ready
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 200+
+                  PREIMERE PRO & AFTER EFFECTS Templates
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 100+
+                  Ready to use Grpahics Templates / Flyer design
+                </li>
+                {/* <li className="flex items-center gap-3 text-neutral-500 line-through">
+                  <CheckCircle2 size={18} /> 100+ PREIMERE PRO & AFTER EFFECTS
+                  Templates
+                </li> */}
               </ul>
               <button className="w-full py-4 rounded-2xl bg-white text-black font-bold hover:bg-neutral-200 transition-colors">
                 Select Basic
@@ -283,7 +324,7 @@ const App = () => {
             </div>
 
             {/* Premium (Recommended) */}
-            <div className="bg-linear-to-br from-purple-900/40 to-black border-2 border-purple-500 p-10 rounded-[2.5rem] flex flex-col relative scale-105 shadow-2xl shadow-purple-500/20">
+            <div className="bg-linear-to-br from-purple-900/40 to-black border-2 border-purple-500 p-10 rounded-[2.5rem] flex flex-col relative shadow-2xl shadow-purple-500/20">
               <div className="absolute top-0 right-10 -translate-y-1/2 bg-yellow-400 text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">
                 Best Value
               </div>
@@ -291,15 +332,23 @@ const App = () => {
                 Holiday Vault 🎁
               </h4>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-black">$49</span>
+                <span className="text-4xl font-black">$15</span>
                 <span className="text-neutral-500 line-through font-bold">
-                  $299
+                  $29
                 </span>
               </div>
               <ul className="space-y-4 mb-10 grow">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="text-green-500" size={18} />{" "}
                   <strong>All 500+ Templates</strong>
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 50+
+                  Lower Thirds
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> HD & 4K
+                  Ready
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="text-green-500" size={18} /> Full SFX
@@ -309,13 +358,17 @@ const App = () => {
                   <CheckCircle2 className="text-green-500" size={18} /> Cinema
                   Lut Library
                 </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-500" size={18} /> Lifetime
-                  Free Updates
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 200+
+                  PREIMERE PRO & AFTER EFFECTS Templates
                 </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-500" size={18} />{" "}
-                  Commercial License
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} /> 100+
+                  Ready to use Grpahics Templates / Flyer design
+                </li>
+                <li className="flex items-center gap-3 text-neutral-300">
+                  <CheckCircle2 className="text-green-500" size={18} />
+                  Video Templates and Graphics
                 </li>
               </ul>
               <button className="w-full py-4 rounded-2xl bg-purple-600 text-white font-black hover:bg-purple-500 transition-all hover:scale-[1.02]">
@@ -335,7 +388,7 @@ const App = () => {
                 Pr
               </div>
               <span className="text-xl font-bold tracking-tighter italic underline decoration-yellow-400">
-                PREMIERE X
+                DRALUX TEMP
               </span>
             </div>
             <p className="text-neutral-500 max-w-sm">
@@ -343,7 +396,7 @@ const App = () => {
               more time on the creative vision.
             </p>
           </div>
-          <div>
+          {/* <div>
             <h5 className="font-bold mb-6">SUPPORT</h5>
             <ul className="space-y-4 text-neutral-500 text-sm">
               <li>
@@ -387,14 +440,14 @@ const App = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-neutral-600 text-sm">
-          <p>© 2025 PremiereX Labs. Built for Editors.</p>
+          <p>© 2025 DRALUXTEMP Hubs. Built for Editors.</p>
           <div className="flex gap-4">
             <ShieldCheck size={20} className="opacity-50" />
             <span className="font-medium">
-              Secure Checkout via Stripe & PayPal
+              Secure Checkout via Paystack & Flutterware
             </span>
           </div>
         </div>
