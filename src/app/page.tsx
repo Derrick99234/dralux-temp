@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import {
-  Play,
   Download,
   Zap,
   CheckCircle2,
@@ -11,6 +10,7 @@ import {
   Gift,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -99,14 +99,12 @@ const App = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() =>
-                router.push("https://paystack.shop/pay/msspgmdpgo")
-              }
+            <Link
+              href={"#bundle"}
               className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-black px-10 py-5 rounded-2xl text-xl transition-all hover:scale-105 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2"
             >
-              <Download size={24} /> GET THE BUNDLE - $10
-            </button>
+              <Download size={24} /> GET THE BUNDLE
+            </Link>
             {/* <button className="w-full sm:w-auto bg-white/5 border border-white/10 hover:bg-white/10 px-10 py-5 rounded-2xl text-xl font-bold transition-all flex items-center justify-center gap-2">
               <Play size={24} fill="white" /> Watch Demo
             </button> */}
