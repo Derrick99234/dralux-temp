@@ -99,12 +99,17 @@ const App = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-black px-10 py-5 rounded-2xl text-xl transition-all hover:scale-105 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2">
+            <button
+              onClick={() =>
+                router.push("https://paystack.shop/pay/msspgmdpgo")
+              }
+              className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-black px-10 py-5 rounded-2xl text-xl transition-all hover:scale-105 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2"
+            >
               <Download size={24} /> GET THE BUNDLE - $10
             </button>
-            <button className="w-full sm:w-auto bg-white/5 border border-white/10 hover:bg-white/10 px-10 py-5 rounded-2xl text-xl font-bold transition-all flex items-center justify-center gap-2">
+            {/* <button className="w-full sm:w-auto bg-white/5 border border-white/10 hover:bg-white/10 px-10 py-5 rounded-2xl text-xl font-bold transition-all flex items-center justify-center gap-2">
               <Play size={24} fill="white" /> Watch Demo
-            </button>
+            </button> */}
           </div>
 
           {/* Social Proof */}
@@ -261,9 +266,9 @@ const App = () => {
             <div className="bg-neutral-900 border border-white/10 p-10 rounded-[2.5rem] flex flex-col">
               <h4 className="text-xl font-bold mb-2">STARTER</h4>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-black">$4</span>
+                <span className="text-4xl font-black">N4,000</span>
                 <span className="text-neutral-500 line-through font-bold">
-                  $10
+                  N5,000
                 </span>
               </div>
               <ul className="space-y-4 mb-10 grow">
@@ -299,9 +304,9 @@ const App = () => {
             <div className="bg-linear-to-br from-yellow-900/40 to-black border-2 border-yellow-500 p-10 rounded-[2.5rem] flex flex-col relative scale-105 shadow-2xl shadow-yellow-500/20">
               <h4 className="text-xl font-bold mb-2">ADVANCED</h4>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-black">$10</span>
+                <span className="text-4xl font-black">N8,000</span>
                 <span className="text-neutral-500 line-through font-bold">
-                  $10
+                  N10,000
                 </span>
               </div>
               <ul className="space-y-4 mb-10 grow">
@@ -349,9 +354,9 @@ const App = () => {
                 Holiday Vault 🎁
               </h4>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-4xl font-black">$15</span>
+                <span className="text-4xl font-black">N10,000</span>
                 <span className="text-neutral-500 line-through font-bold">
-                  $29
+                  N15,000
                 </span>
               </div>
               <ul className="space-y-4 mb-10 grow">
