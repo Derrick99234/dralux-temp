@@ -41,11 +41,7 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+
         {/* Meta Pixel noscript */}
         <noscript>
           <img
@@ -56,6 +52,11 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );
