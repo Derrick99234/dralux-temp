@@ -100,7 +100,7 @@ const App = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href={"#bundle"}
+              href={"#pricing"}
               className="w-full sm:w-auto bg-green-500 hover:bg-green-400 text-black font-black px-10 py-5 rounded-2xl text-xl transition-all hover:scale-105 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2"
             >
               <Download size={24} /> GET THE BUNDLE
